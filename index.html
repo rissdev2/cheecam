@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Cheecam</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        @font-face {
+  font-family: August Stories;
+  src: url(./August\ Stories\ Serif.ttf);
+}
+
+.hero-sec h1{
+    color: #1A1B18;
+font-family: August Stories;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px;
+padding-left: 100px;
+padding-right: 50px;
+}
+.hero-sec p{
+    color: #4E504C;
+font-family: 'Poppins', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px;
+padding-left: 100px;
+}
+.hero-btn{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.hero-btn a{
+    padding: 12px 30px;
+    border: 1px solid #1A1B18;
+background: #1A1B18;
+color: #FFF;
+font-family: 'Karla', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 129.231% */
+letter-spacing: 2.8px;
+text-transform: uppercase;
+text-decoration: none;
+}
+.points{
+    display: flex;
+    align-items: center;
+    /* gap: 0px; */
+    padding-left: 100px;
+    /* padding-right: 10px; */
+}
+.points1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 45%;
+}
+.points p{
+    color: #4E504C;
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+padding-left: 0px;
+margin-bottom: 0px;
+}
+.text-sec{
+    padding: 100px;
+    background: #F5F2EB;
+}
+.text-sec h2{
+    color: #1A1B18;
+text-align: center;
+font-family: August Stories;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px;
+}
+.text-sec p{
+    color: #4E504C;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 56px;
+}
+.work-sec{
+    padding: 100px;
+}
+.work-card h4{
+    color: #1A1B18;
+text-align: center;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+.work-card h3{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 34px;
+font-style: normal;
+font-weight: 400;
+line-height: 54px; /* 158.824% */
+text-transform: uppercase;
+}
+.work-card p{
+    color: #4E504C;
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 56px; /* 280% */
+}
+.memory-sec{
+    padding: 0px 100px;
+}
+.memory-sec h2{
+    color: #1A1B18;
+font-family: August Stories;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px; /* 148.387% */
+}
+.memory-sec p{
+    color: #4E504C;
+font-family: 'Poppins', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px; /* 191.667% */
+}
+.simplicity-sec{
+    background-image: url(./simplicity-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 100px;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.simplicity-sec h2{
+    color: #FFF;
+font-family: August Stories;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px; /* 176.923% */
+}
+.simplicity-sec p{
+    color: #FFF;
+font-family: 'Poppins', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px; /* 209.091% */
+}
+.simple-btn a{
+    padding: 12px 30px;
+    /* border: 1px solid #1A1B18; */
+background: #99AFC2;
+color: #FFF;
+font-family: 'Karla', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 129.231% */
+letter-spacing: 2.8px;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.multiple-sec{
+    background-image: url(./multiple-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 100px;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.multiple-sec h2{
+    color: #FFF;
+font-family: August Stories;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px; /* 176.923% */
+}
+.multiple-sec p{
+    color: #FFF;
+font-family: 'Poppins', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px; /* 209.091% */
+}
+.multiple-btn a{
+    padding: 12px 30px;
+    /* border: 1px solid #1A1B18; */
+background: #CBA4AB;
+color: #FFF;
+font-family: 'Karla', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 129.231% */
+letter-spacing: 2.8px;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+
+.experience-sec{
+    background-image: url(./experience-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 100px;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.experience-sec h2{
+    color: #FFF;
+font-family: August Stories;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px; /* 176.923% */
+}
+.experience-sec p{
+    color: #FFF;
+font-family: 'Poppins', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px; /* 209.091% */
+}
+.experience-btn a{
+    padding: 12px 30px;
+    /* border: 1px solid #1A1B18; */
+background: #D4C5B0;
+color: #FFF;
+font-family: 'Karla', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 129.231% */
+letter-spacing: 2.8px;
+text-transform: uppercase;
+text-decoration: none;
+}
+.time-sec h2{
+    color: #1A1B18;
+text-align: center;
+font-family: August Stories;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: 102px; /* 164.516% */
+}
+
+
+
+
+.main-div{
+  position: relative;
+  display: grid;
+  /* place-items: center; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  width: 80%;
+  height: 700px;
+  background: #fff;
+  transition: .5s;
+}
+
+.main-div .box{
+  position: relative;
+  background: var(--img);
+  background-position: center;
+  background-size: cover;
+  transition: .25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(0) ;
+}
+
+.main-div:hover .box{
+  filter: grayscale(1);
+}
+
+.main-div .box:hover{
+  filter: grayscale(0) ;
+}
+
+.main-div:has(.one:hover){
+  grid-template-columns: 2fr .5fr .5fr .5fr .5fr .5fr;
+}
+
+.main-div:has(.two:hover){
+  grid-template-columns: .5fr 2fr .5fr .5fr .5fr .5fr;
+}
+
+.main-div:has(.three:hover){
+  grid-template-columns: .5fr .5fr 2fr .5fr .5fr .5fr;
+}
+
+.main-div:has(.four:hover){
+  grid-template-columns: .5fr .5fr .5fr 2fr .5fr .5fr;
+}
+
+.main-div:has(.five:hover){
+  grid-template-columns: .5fr .5fr .5fr .5fr 2fr .5fr;
+}
+.main-div:has(.six:hover){
+  grid-template-columns: .5fr .5fr .5fr .5fr .5fr 2fr;
+}
+/* .main-div .box::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000000, transparent, transparent, transparent, #000000);
+} */
+
+.main-div .box:nth-child(even){
+  transform: translateY(30px);
+}
+
+.main-div .box:nth-child(odd){
+  transform: translateY(30px);
+}
+
+.main-div .box::after{
+  content: attr(data-text);
+  position: absolute;
+  bottom: -80px;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  white-space: nowrap;
+  transition: .5s;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main-div .box:hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.cheecam-sec h2{
+    color: #1A1B18;
+text-align: center;
+font-family: August Stories;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 92px; /* 176.923% */
+}
+.cheecam-sec p{
+    color: #4E504C;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 56px; /* 280% */
+}
+
+
+
+
+
+@media screen and (max-width:767px){
+    .hero-sec h1{
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 35px;
+        line-height: 48px;
+        padding-top: 50px;
+    }
+    .hero-sec p{
+        padding-left: 0px;
+        font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    }
+    .points{
+        padding-left: 0px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .points1{
+        width: 101%;
+        gap: 5px;
+    }
+    .hero-btn {
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.points p{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.text-sec{
+    padding: 50px 0px;
+}
+.text-sec h2{
+    font-size: 32px;
+    line-height: 56px;
+}
+.text-sec p{
+    font-size: 16px;
+    line-height: 40px;
+    padding: 10px 20px;
+}
+.work-sec{
+    padding: 50px 0px;
+}
+.work-card h4{
+    font-size: 20px;
+}
+.work-card h3{
+    font-size: 22px;
+}
+.work-card p{
+    font-size: 16px;
+    line-height: 36px;
+}
+.memory-sec{
+    padding: 20px 10px;
+}
+.memory-sec h2{
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+}
+.memory-sec p{
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}
+.simplicity-sec{
+    padding: 0px 10px;
+    background-image: url(./simplicity-mblbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.simplicity-sec h2{
+    font-size: 32px;
+    line-height: 56px;
+}
+.simplicity-sec p{
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+
+
+
+
+.multiple-sec{
+    padding: 0px 10px;
+    background-image: url(./multiple-mblbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.multiple-sec h2{
+    font-size: 32px;
+    line-height: 56px;
+}
+.multiple-sec p{
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+
+
+.experience-sec{
+    padding: 0px 10px;
+    background-image: url(./experience-mblbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.experience-sec h2{
+    font-size: 32px;
+    line-height: 56px;
+}
+.experience-sec p{
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+.cheecam-sec h2{
+    font-size: 32px;
+    line-height: 56px;
+}
+.cheecam-sec p{
+    font-size: 16px;
+    line-height: 36px;
+}
+.main-div{
+    grid-gap: 5px;
+    width: 95%;
+    height: 500px;
+}
+.time-sec h2{
+    font-size: 30px;
+    line-height: 56px;
+}
+}
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+
+
+
+<!--------- Hero Section Code Start  -------->
+<section>
+    <div class="container-fluid">
+        <div class="row align-items-center flex-column-reverse flex-md-row ">
+            <div class="col-md-6 hero-sec">
+                <h1>Disposable Cameras Reimagined for Weddings</h1>
+                <p>Capture Instagrammable moments with our stress-free <br class="d-none d-md-block"> complete packages.</p>
+                <div class="points">
+                    <div class="points1">
+                        <img src="./tick.png" alt="">
+                        <p>Hassle-Free Film Development</p>
+                    </div>
+                    <div class="points1">
+                        <img src="./tick.png" alt="">
+                        <p>Premium Quality Film</p>
+                    </div>
+                </div>
+                <div class="points pt-3">
+                    <div class="points1">
+                        <img src="./tick.png" alt="">
+                        <p>Professionally Retouched Film</p>
+                    </div>
+                    <div class="points1">
+                        <img src="./tick.png" alt="">
+                        <p>Convenient Digital And Physical Film</p>
+                    </div>
+                </div>
+                <div class="hero-btn">
+                    <a href="">Shop Packages</a>
+                </div>
+            </div>
+            <div class="col-md-6 hero-sec">
+                <img src="./hero.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Hero Section Code End  -------->
+<!--------- Text Section Code Start  -------->
+<section class="text-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Escape The DIY Dilemma. Elevate Your Film With Less Stress.</h2>
+                <p>Ditch the DIY cumbersome disposables. Don't waste time and energy trying to capture your precious moments alone. Our expert <br class="d-none d-md-block"> solution ensures top-tier film quality while sparing you the hassle and time. Your memories deserve to be unforgettable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Text Section Code End  -------->
+<!--------- How It Works Section Code Start  -------->
+<section class="work-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 px-4 text-center">
+                <div class="work-card">
+                    <img src="./step1.png" class="img-fluid" alt="">
+                    <h4 class="pt-3 pt-md-0">Step 01</h4>
+                    <h3>CHOOSE YOUR PACKAGE</h3>
+                    <p>Select your package, pick your preferred delivery date, and we'll ship it right to your doorstep.</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-5 poy-md-0 px-4 text-center">
+                <div class="work-card">
+                    <img src="./step2.png" class="img-fluid" alt="">
+                    <h4 class="pt-3 pt-md-0">Step 02</h4>
+                    <h3>CAPTURE YOUR WEDDING</h3>
+                    <p>Assign trusted friends to capture fun candid moments. Remember to use flash</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4 text-center">
+                <div class="work-card">
+                    <img src="./step3.png" class="img-fluid" alt="">
+                    <h4 class="pt-3 pt-md-0">Step 03</h4>
+                    <h3>RECEIVE YOUR FILM</h3>
+                    <p>Use the return label for development and we will develop, scan, and send your film to you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- How It Works Section Code End  -------->
+<!--------- Time less Memory Section Code Start  -------->
+<section>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="./memory.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6 memory-sec">
+                <h2>Retro Vibes, Timeless Memories</h2>
+                  <p>Experience the unique and captivating retro film look that sets us apart from the rest.</p>  
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Time less Memory Section Code End  -------->
+<!--------- Simplicity Section Code Start  -------->
+<section class="simplicity-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Streamlined simplicity</h2>
+                <p>With our full-service approach, we handle all logistics. From delivery and development, to film retouching and film scans, we ensure a stress-free experience for you.</p>
+                <div class="simple-btn">
+                    <a href="">Shop Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Simplicity Section Code End  -------->
+<!--------- Multiple Formats Section Code Start  -------->
+<section class="multiple-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Your film in multiple formats</h2>
+                <p>Experience the unique and captivating retro film look that sets us apart from the rest. All your film in both color and b&w, plus digital + physical print options</p>
+                <div class="multiple-btn">
+                    <a href="">Shop Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Multiple Formats Section Code End  -------->
+<!--------- experience Section Code Start  -------->
+<section class="experience-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Unforgettable experience with your guests</h2>
+                <p>Capture the raw, unfiltered emotions of your special day with candid photos from your guests. Finally, an experience you and your guests can do together.</p>
+                <div class="experience-btn">
+                    <a href="">Shop Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- experience Section Code End  -------->
+<!--------- Gurantee Section Code Start  -------->
+<section>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+           
+            <div class="col-md-6 memory-sec">
+                <h2>Happily Ever After Guarantee</h2>
+                  <p>We've got you covered from "I do" to "Happily Ever After." If you're not jumping for joy at any stage, we'll refund you in FULL. No drama.</p>  
+                  <p class="pt-md-5">Some exceptions include: user error such as not using the flash when necessary. See FAQ for full details.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="./gurantee.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Gurantee Section Code End  -------->
+<!--------- Get Cheeecam Section Code Start  -------->
+<div class="container cheecam-sec pt-5 mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2>#getcheecam</h2>
+            <p>Check out how wedding couples made their wedding unforgettable</p>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="containner-fluid d-flex justify-content-center ">
+       
+  <div class="main-div">
+    <div class="box one" style="--img:url(./slide1.png)"></div>
+    <div class="box two" style="--img:url(./slide2.png)"></div>
+    <div class="box three" style="--img:url(./slide3.png)"></div>
+    <div class="box four" style="--img:url(./slide4.png)" ></div>
+    <div class="box five" style="--img:url(./slide5.png)"></div>
+    <div class="box six" style="--img:url(./slide6.png)"></div>
+  </div>
+    </div>
+</section>
+<!--------- Get Cheeecam Section Code End  -------->
+
+
+
+
+
+
+
+
+
+
+<!--------- Timeless Memories In Hand Section Code Start  -------->
+<section class="my-5 time-sec">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h2>From wedding to prints, timeless memories in-hand.</h2>
+                <div class="hero-btn pt-3 pt-md-0 ps-0">
+                    <a href="">Shop Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Timeless Memories In Hand Section Code End  -------->
+
+
+
+
+
+
+
+<div class="text-center py-3 bg-dark">
+    <img src="./logo.png" alt="">
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
