@@ -156,7 +156,7 @@ line-height: 46px; /* 191.667% */
     display: flex;
     align-items: center;
     background-attachment: fixed;
-    background-attachment: -webkit-fixed;
+     background-attachment: -webkit-fixed;
     height: 100vh;
 }
 .simplicity-sec h2{
@@ -477,33 +477,43 @@ line-height: 56px; /* 280% */
 .simplicity-sec{
     padding: 0px 10px;
     background-image: url(./simplicity-mblbg.png) !important;
-    /* background-attachment: fixed !important;
+    background-attachment: fixed !important;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: center; */
+    align-items: center;
 }
 .simplicity-sec h2{
     font-size: 32px;
     line-height: 56px;
+  
 }
 .simplicity-sec p{
     font-size: 16px;
     line-height: 36px;
     margin-bottom: 35px;
+    
 }
-
+.sticky-sec{
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    /* position: sticky; */
+    top: 0;
+}
 
 
 
 .multiple-sec{
     padding: 0px 10px;
     background-image: url(./multiple-mblbg.png) !important;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-size: cover;
     display: flex;
-    align-items: center; */
+    align-items: center;
 }
 .multiple-sec h2{
     font-size: 32px;
@@ -671,14 +681,17 @@ line-height: 56px; /* 280% */
 <!--------- Time less Memory Section Code End  -------->
 <!--------- Simplicity Section Code Start  -------->
 <section class="simplicity-sec">
-    <div class="container-fluid">
+    <div class="container-fluid  sticky-sec">
         <div class="row">
             <div class="col-md-5">
-                <h2>Streamlined simplicity</h2>
-                <p>With our full-service approach, we handle all logistics. From delivery and development, to film retouching and film scans, we ensure a stress-free experience for you.</p>
-                <div class="simple-btn">
-                    <a href="">Shop Packages</a>
-                </div>
+                
+                    <h2>Streamlined simplicity</h2>
+                    <p>With our full-service approach, we handle all logistics. From delivery and development, to film retouching and film scans, we ensure a stress-free experience for you.</p>
+                    <div class="simple-btn">
+                        <a href="">Shop Packages</a>
+                    </div>
+
+               
             </div>
         </div>
     </div>
@@ -686,7 +699,7 @@ line-height: 56px; /* 280% */
 <!--------- Simplicity Section Code End  -------->
 <!--------- Multiple Formats Section Code Start  -------->
 <section class="multiple-sec">
-    <div class="container-fluid">
+    <div class="container-fluid sticky-sec">
         <div class="row">
             <div class="col-md-5">
                 <h2>Your film in multiple formats</h2>
@@ -701,7 +714,7 @@ line-height: 56px; /* 280% */
 <!--------- Multiple Formats Section Code End  -------->
 <!--------- experience Section Code Start  -------->
 <section class="experience-sec">
-    <div class="container-fluid">
+    <div class="container-fluid sticky-sec">
         <div class="row">
             <div class="col-md-5">
                 <h2>Unforgettable experience with your guests</h2>
